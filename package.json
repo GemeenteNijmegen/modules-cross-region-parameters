@@ -44,6 +44,8 @@
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
     "aws-cdk-lib": "2.1.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "aws-sdk-client-mock-jest": "^4.1.0",
     "commit-and-tag-version": "^12",
     "constructs": "10.0.5",
     "esbuild": "^0.27.2",
@@ -85,6 +87,10 @@
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",
+    "roots": [
+      "src/",
+      "test/"
+    ],
     "testMatch": [
       "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
       "<rootDir>/@(src|test)/**/__tests__/**/*.ts?(x)",
