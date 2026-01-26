@@ -77,7 +77,7 @@ it('should update a parameter', async () => {
   const event: Partial<CdkCustomResourceEvent> = {
     RequestType: 'Update',
     ResourceProperties: {
-      RegionName: 'us-east-1',
+      regionName: 'us-east-1',
       parameterPath: '/my/parameter1',
       PhysicalResourceId: 'my-physical-id',
       ServiceToken: 'my-service-token',
@@ -102,7 +102,7 @@ it('should call the ssmClient with correct parameters on create', async () => {
   const event: Partial<CdkCustomResourceEvent> = {
     RequestType: 'Create',
     ResourceProperties: {
-      RegionName: 'us-east-1',
+      regionName: 'us-east-1',
       parameterPath: '/my/parameter1',
       PhysicalResourceId: 'my-physical-id',
       ServiceToken: 'my-service-token',

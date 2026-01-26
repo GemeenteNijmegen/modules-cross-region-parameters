@@ -7,15 +7,11 @@ import {
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { CrossRegionParamtersFunction } from './lambdas/cross-region-parameters/cross-region-paramters-function';
-
+import { ResourceProperties } from './lambdas/cross-region-parameters/schemas';
 /**
  * Properties of the RemoteParameters
  */
 export interface RemoteParametersProps {
-  // /**
-  //  * The remote CDK stack to get the parameters from.
-  //  */
-  // readonly stack: cdk.Stack;
   /**
      * The region code of the remote stack.
      */
@@ -69,7 +65,7 @@ export class RemoteParameters extends Construct {
         regionName: props.region,
         parameterPath: props.path,
         randomString: props.alwaysUpdate == false ? undefined : randomUUID(),
-      },
+      } as ResourceProperties,
     });
   }
 

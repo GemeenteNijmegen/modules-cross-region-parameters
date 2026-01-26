@@ -3,7 +3,7 @@ const project = new GemeenteNijmegenCdkLib({
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   devDeps: ['@gemeentenijmegen/projen-project-type', 'aws-sdk-client-mock', 'aws-sdk-client-mock-jest'],
-  bundledDeps: ['@types/aws-lambda', '@aws-sdk/client-ssm'],
+  bundledDeps: ['@types/aws-lambda', '@aws-sdk/client-ssm', 'zod'],
   name: '@gemeentenijmegen/cross-region-parameteres',
   projenrcTs: true,
   author: 'Gemeente Nijmegen',
