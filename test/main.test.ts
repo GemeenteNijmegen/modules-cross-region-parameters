@@ -1,11 +1,20 @@
-import { App } from 'aws-cdk-lib';
+import { App, Stack } from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { MyStack } from '../src/main';
+import { RemoteParameters } from '../src/index';
 
-test('Snapshot', () => {
+// test cross region parameters lambda function
+it('test cross region parameters lambda function', () => {
   const app = new App();
-  const stack = new MyStack(app, 'test');
+  const stack = new Stack(app, 'TestStack');
+
+  new RemoteParameters(stack, 'MyRemoteParameters', {
+    region: 'us-west-2',
+    path: '/my/parameter/path',
+  });
 
   const template = Template.fromStack(stack);
-  expect(template.toJSON()).toMatchSnapshot();
+  template.hasResourceProperties('AWS::Lambda::Function', {
+    Description: 'Handles remote CDK parameters retrieval',
+    Runtime: 'nodejs24.x',
+  });
 });
