@@ -10,6 +10,7 @@ const project = new GemeenteNijmegenCdkLib({
   authorAddress: 'devops@nijmegen.nl',
   repositoryUrl: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameteres',
   repository: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameteres',
+  npmTrustedPublishing: true,
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
