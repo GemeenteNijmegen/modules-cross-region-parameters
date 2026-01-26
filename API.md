@@ -168,7 +168,6 @@ const remoteParametersProps: RemoteParametersProps = { ... }
 | <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.path">path</a></code> | <code>string</code> | The parameter path. |
 | <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.region">region</a></code> | <code>string</code> | The region code of the remote stack. |
 | <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.alwaysUpdate">alwaysUpdate</a></code> | <code>boolean</code> | Indicate whether always update the custom resource to get the new stack output. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | The assumed role used to get remote parameters. |
 | <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | timeout for custom resource handler. |
 
 ---
@@ -207,18 +206,6 @@ public readonly alwaysUpdate: boolean;
 - *Default:* true
 
 Indicate whether always update the custom resource to get the new stack output.
-
----
-
-##### `role`<sup>Optional</sup> <a name="role" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.role"></a>
-
-```typescript
-public readonly role: IRole;
-```
-
-- *Type:* aws-cdk-lib.aws_iam.IRole
-
-The assumed role used to get remote parameters.
 
 ---
 
