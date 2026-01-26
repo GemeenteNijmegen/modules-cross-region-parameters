@@ -1,1 +1,1 @@
-# replace this
+# About the cross region parrameters project
