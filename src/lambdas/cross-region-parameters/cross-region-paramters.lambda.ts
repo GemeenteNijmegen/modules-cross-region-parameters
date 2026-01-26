@@ -17,14 +17,14 @@ export async function handler(event: CdkCustomResourceEvent): Promise<CdkCustomR
 async function on_create(event: CdkCustomResourceEvent) {
   const props = event.ResourceProperties;
   console.log('create new resource with props ', props);
-  const output = get_parameters(props.RegionName, props.parameterPath);
+  const output = await get_parameters(props.RegionName, props.parameterPath);
   return { Data: output };
 }
 
 async function on_update(event: CdkCustomResourceEvent) {
   const props = event.ResourceProperties;
   console.log('update resource with props ', props);
-  const output = get_parameters(props.RegionName, props.parameterPath);
+  const output = await get_parameters(props.RegionName, props.parameterPath);
   return { PhysicalResourceId: props.PhysicalResourceId, Data: output };
 }
 
@@ -34,13 +34,17 @@ async function on_delete(event: CdkCustomResourceEvent) {
   return { PhysicalResourceId: props.PhysicalResourceId };
 }
 
-async function get_parameters(regionName: string, parameterPath: string) {
+export async function get_parameters(regionName: string, parameterPath: string) {
   const client = new SSMClient({ region: regionName });
   const response = await client.send(new GetParametersByPathCommand({ Path: parameterPath }));
-  return response.Parameters?.reduce((output: { [key: string]: string }, x: Parameter) => {
+  if (!response.Parameters) {
+    return {};
+  }
+  return response.Parameters.reduce((output: { [key: string]: string }, x: Parameter) => {
     if (!x.Name || !x.Value) {
       return output;
     }
+    console.log(`Found parameter ${x.Name}`);
     output[x.Name] = x.Value;
     return output;
   }, {});
