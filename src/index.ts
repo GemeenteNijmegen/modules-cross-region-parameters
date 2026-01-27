@@ -6,7 +6,7 @@ import {
   custom_resources as cr,
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { CrossRegionParamtersFunction } from './lambdas/cross-region-parameters/cross-region-paramters-function';
+import { CrossRegionParametersFunction } from './lambdas/cross-region-parameters/cross-region-parameters-function';
 import { ResourceProperties } from './lambdas/cross-region-parameters/schemas';
 /**
  * Properties of the RemoteParameters
@@ -43,7 +43,7 @@ export class RemoteParameters extends Construct {
 
   constructor(scope: Construct, id: string, props: RemoteParametersProps) {
     super(scope, id);
-    const onEvent = new CrossRegionParamtersFunction(this, 'CrossRegionParamtersFunction', {
+    const onEvent = new CrossRegionParametersFunction(this, 'CrossRegionParametersFunction', {
       description: 'Handles remote CDK parameters retrieval',
       timeout: props.timeout ?? Duration.seconds(10),
     });

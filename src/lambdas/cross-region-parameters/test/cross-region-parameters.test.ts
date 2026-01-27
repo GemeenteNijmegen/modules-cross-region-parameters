@@ -1,7 +1,7 @@
 import { SSMClient, GetParametersByPathCommandOutput, GetParametersByPathCommand } from '@aws-sdk/client-ssm';
 import { CdkCustomResourceEvent } from 'aws-lambda/trigger/cdk-custom-resource';
 import { mockClient } from 'aws-sdk-client-mock';
-import { get_parameters, handler } from '../cross-region-paramters.lambda';
+import { get_parameters, handler } from '../cross-region-parameters.lambda';
 import 'aws-sdk-client-mock-jest';
 
 it('should get all parameters matching a path', async () => {

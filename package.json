@@ -1,15 +1,15 @@
 {
-  "name": "@gemeentenijmegen/cross-region-parameteres",
+  "name": "@gemeentenijmegen/cross-region-parameters",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GemeenteNijmegen/modules-cross-region-parameteres"
+    "url": "https://github.com/GemeenteNijmegen/modules-cross-region-parameters"
   },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
     "bundle": "npx projen bundle",
-    "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda": "npx projen bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda",
-    "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda:watch": "npx projen bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda:watch",
+    "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda": "npx projen bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda",
+    "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda:watch": "npx projen bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda:watch",
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "npx projen compile",

@@ -54,7 +54,7 @@ junit.xml
 tsconfig.json
 !/API.md
 /assets/
-!/src/lambdas/cross-region-parameters/cross-region-paramters-function.ts
+!/src/lambdas/cross-region-parameters/cross-region-parameters-function.ts
 !/.github/workflows/emergency.yml
 !/.github/workflows/auto-merge.yml
 !/.nvmrc

@@ -4,12 +4,12 @@ const project = new GemeenteNijmegenCdkLib({
   defaultReleaseBranch: 'main',
   devDeps: ['@gemeentenijmegen/projen-project-type', 'aws-sdk-client-mock', 'aws-sdk-client-mock-jest'],
   bundledDeps: ['@types/aws-lambda', '@aws-sdk/client-ssm', 'zod'],
-  name: '@gemeentenijmegen/cross-region-parameteres',
+  name: '@gemeentenijmegen/cross-region-parameters',
   projenrcTs: true,
   author: 'Gemeente Nijmegen',
   authorAddress: 'devops@nijmegen.nl',
-  repositoryUrl: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameteres',
-  repository: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameteres',
+  repositoryUrl: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameters',
+  repository: 'https://github.com/GemeenteNijmegen/modules-cross-region-parameters',
   npmTrustedPublishing: true,
   jestOptions: {
     jestConfig: {
