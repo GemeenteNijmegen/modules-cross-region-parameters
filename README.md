@@ -1,1 +1,1 @@
-# About the cross region parrameters project
+# About the cross region parameters project

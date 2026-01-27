@@ -2,41 +2,41 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### RemoteParameters <a name="RemoteParameters" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters"></a>
+### RemoteParameters <a name="RemoteParameters" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters"></a>
 
 Represents the RemoteParameters of the remote CDK stack.
 
-#### Initializers <a name="Initializers" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer"></a>
+#### Initializers <a name="Initializers" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer"></a>
 
 ```typescript
-import { RemoteParameters } from '@gemeentenijmegen/cross-region-parameteres'
+import { RemoteParameters } from '@gemeentenijmegen/cross-region-parameters'
 
 new RemoteParameters(scope: Construct, id: string, props: RemoteParametersProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.props">props</a></code> | <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps">RemoteParametersProps</a></code> | *No description.* |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.props">props</a></code> | <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps">RemoteParametersProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps">RemoteParametersProps</a>
+- *Type:* <a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps">RemoteParametersProps</a>
 
 ---
 
@@ -44,12 +44,12 @@ new RemoteParameters(scope: Construct, id: string, props: RemoteParametersProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.get">get</a></code> | Get the parameter. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.get">get</a></code> | Get the parameter. |
 
 ---
 
-##### `toString` <a name="toString" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.toString"></a>
+##### `toString` <a name="toString" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.toString"></a>
 
 ```typescript
 public toString(): string
@@ -57,7 +57,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `get` <a name="get" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.get"></a>
+##### `get` <a name="get" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.get"></a>
 
 ```typescript
 public get(key: string): string
@@ -65,7 +65,7 @@ public get(key: string): string
 
 Get the parameter.
 
-###### `key`<sup>Required</sup> <a name="key" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.get.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.get.parameter.key"></a>
 
 - *Type:* string
 
@@ -77,14 +77,14 @@ output key.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.isConstruct"></a>
 
 ```typescript
-import { RemoteParameters } from '@gemeentenijmegen/cross-region-parameteres'
+import { RemoteParameters } from '@gemeentenijmegen/cross-region-parameters'
 
 RemoteParameters.isConstruct(x: any)
 ```
@@ -105,7 +105,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -117,12 +117,12 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParameters.property.parameters">parameters</a></code> | <code>aws-cdk-lib.CustomResource</code> | The parameters in the SSM parameter store for the remote stack. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.property.parameters">parameters</a></code> | <code>aws-cdk-lib.CustomResource</code> | The parameters in the SSM parameter store for the remote stack. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -134,7 +134,7 @@ The tree node.
 
 ---
 
-##### `parameters`<sup>Required</sup> <a name="parameters" id="@gemeentenijmegen/cross-region-parameteres.RemoteParameters.property.parameters"></a>
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.property.parameters"></a>
 
 ```typescript
 public readonly parameters: CustomResource;
@@ -149,14 +149,14 @@ The parameters in the SSM parameter store for the remote stack.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### RemoteParametersProps <a name="RemoteParametersProps" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps"></a>
+### RemoteParametersProps <a name="RemoteParametersProps" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps"></a>
 
 Properties of the RemoteParameters.
 
-#### Initializer <a name="Initializer" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.Initializer"></a>
 
 ```typescript
-import { RemoteParametersProps } from '@gemeentenijmegen/cross-region-parameteres'
+import { RemoteParametersProps } from '@gemeentenijmegen/cross-region-parameters'
 
 const remoteParametersProps: RemoteParametersProps = { ... }
 ```
@@ -165,14 +165,14 @@ const remoteParametersProps: RemoteParametersProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.path">path</a></code> | <code>string</code> | The parameter path. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.region">region</a></code> | <code>string</code> | The region code of the remote stack. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.alwaysUpdate">alwaysUpdate</a></code> | <code>boolean</code> | Indicate whether always update the custom resource to get the new stack output. |
-| <code><a href="#@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | timeout for custom resource handler. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.path">path</a></code> | <code>string</code> | The parameter path. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.region">region</a></code> | <code>string</code> | The region code of the remote stack. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.alwaysUpdate">alwaysUpdate</a></code> | <code>boolean</code> | Indicate whether always update the custom resource to get the new stack output. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.timeout">timeout</a></code> | <code>aws-cdk-lib.Duration</code> | timeout for custom resource handler. |
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.path"></a>
 
 ```typescript
 public readonly path: string;
@@ -184,7 +184,7 @@ The parameter path.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -196,7 +196,7 @@ The region code of the remote stack.
 
 ---
 
-##### `alwaysUpdate`<sup>Optional</sup> <a name="alwaysUpdate" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.alwaysUpdate"></a>
+##### `alwaysUpdate`<sup>Optional</sup> <a name="alwaysUpdate" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.alwaysUpdate"></a>
 
 ```typescript
 public readonly alwaysUpdate: boolean;
@@ -209,7 +209,7 @@ Indicate whether always update the custom resource to get the new stack output.
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="@gemeentenijmegen/cross-region-parameteres.RemoteParametersProps.property.timeout"></a>
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@gemeentenijmegen/cross-region-parameters.RemoteParametersProps.property.timeout"></a>
 
 ```typescript
 public readonly timeout: Duration;

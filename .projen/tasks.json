@@ -47,25 +47,25 @@
       "description": "Prepare assets",
       "steps": [
         {
-          "spawn": "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda"
+          "spawn": "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda"
         }
       ]
     },
-    "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda": {
-      "name": "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda",
-      "description": "Create a JavaScript bundle from src/lambdas/cross-region-parameters/cross-region-paramters.lambda.ts",
+    "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda": {
+      "name": "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda",
+      "description": "Create a JavaScript bundle from src/lambdas/cross-region-parameters/cross-region-parameters.lambda.ts",
       "steps": [
         {
-          "exec": "esbuild --bundle src/lambdas/cross-region-parameters/cross-region-paramters.lambda.ts --target=\"node24\" --platform=\"node\" --outfile=\"assets/lambdas/cross-region-parameters/cross-region-paramters.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/*"
+          "exec": "esbuild --bundle src/lambdas/cross-region-parameters/cross-region-parameters.lambda.ts --target=\"node24\" --platform=\"node\" --outfile=\"assets/lambdas/cross-region-parameters/cross-region-parameters.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/*"
         }
       ]
     },
-    "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda:watch": {
-      "name": "bundle:lambdas/cross-region-parameters/cross-region-paramters.lambda:watch",
-      "description": "Continuously update the JavaScript bundle from src/lambdas/cross-region-parameters/cross-region-paramters.lambda.ts",
+    "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda:watch": {
+      "name": "bundle:lambdas/cross-region-parameters/cross-region-parameters.lambda:watch",
+      "description": "Continuously update the JavaScript bundle from src/lambdas/cross-region-parameters/cross-region-parameters.lambda.ts",
       "steps": [
         {
-          "exec": "esbuild --bundle src/lambdas/cross-region-parameters/cross-region-paramters.lambda.ts --target=\"node24\" --platform=\"node\" --outfile=\"assets/lambdas/cross-region-parameters/cross-region-paramters.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/* --watch"
+          "exec": "esbuild --bundle src/lambdas/cross-region-parameters/cross-region-parameters.lambda.ts --target=\"node24\" --platform=\"node\" --outfile=\"assets/lambdas/cross-region-parameters/cross-region-parameters.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/* --watch"
         }
       ]
     },
