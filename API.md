@@ -45,6 +45,7 @@ new RemoteParameters(scope: Construct, id: string, props: RemoteParametersProps)
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@gemeentenijmegen/cross-region-parameters.RemoteParameters.get">get</a></code> | Get the parameter. |
 
 ---
@@ -56,6 +57,27 @@ public toString(): string
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
 
 ##### `get` <a name="get" id="@gemeentenijmegen/cross-region-parameters.RemoteParameters.get"></a>
 
