@@ -63,7 +63,7 @@
     },
     {
       "name": "jest-junit",
-      "version": "^16",
+      "version": "^17",
       "type": "build"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "name": "constructs",
-      "version": "^10.5.1",
+      "version": "^10.8.1",
       "type": "peer"
     }
   ],
